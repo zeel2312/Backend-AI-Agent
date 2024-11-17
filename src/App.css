@@ -1,0 +1,167 @@
+/* General Styling */
+
+@import url('https://fonts.googleapis.com/css2?family=Spectral&display=swap');
+
+/* Example for Faculty Glyphic using Adobe Fonts */
+@import url('https://use.typekit.net/{YOUR-TYPEKIT-ID}.css');
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Spectral', serif;
+  background-color: #1e1e2f;
+  color: #fff;
+  height: 100%;
+  overflow: hidden;
+}
+
+.App-header {
+  background-color: #f3c16b;
+  backdrop-filter: blur(5px);
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.App-title {
+  margin: 0;
+  color: #0c0b0b;
+}
+
+/* Layout Styling */
+.App-content {
+  display: flex;
+  height: calc(100vh - 60px); /* Full height minus header */
+}
+
+.Chat-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border-right: 2px solid #333;
+}
+
+.Table-section {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+/* Chat Section */
+.Chat-header {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.Chat-box {
+  flex-grow: 1;
+  overflow-y: auto;
+  background-color: #242437;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 15px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.Chat-box .message {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.Chat-box .message.user {
+  background-color: #3c3c6c;
+  text-align: right;
+}
+
+.Chat-box .message.bot {
+  background-color: #2c2c54;
+  text-align: left;
+}
+
+.Chat-input {
+  display: flex;
+  align-items: center;
+  margin-top: auto;
+}
+
+.Chat-input input {
+  flex-grow: 1;
+  padding: 10px;
+  border-radius: 5px 0 0 5px;
+  border: none;
+  outline: none;
+  background-color: #333;
+  color: #fff;
+  font-size: 16px;
+}
+
+.Chat-input button {
+  padding: 0 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.Chat-input button:hover {
+  background-color: #0056b3;
+}
+
+/* Table Section */
+.Table-header {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.Table-container {
+  background-color: #242437;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+table th, table td {
+  padding: 10px;
+  border: 1px solid #333;
+}
+
+table th {
+  background-color: #333;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+table td {
+  color: #fff; /* White text for table cells */
+  background-color: white; /* Darker background for cells */
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #555;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #777;
+}

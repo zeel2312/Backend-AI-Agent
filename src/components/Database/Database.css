@@ -1,0 +1,159 @@
+/* General Styling */
+.database-container {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    background-color: #f7d59a;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
+}
+
+/* Chat Section Styling */
+.chat-section {
+    flex: 0 0 35%; /* Set width to 50% */
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #f7d59a;
+    overflow-y: auto;
+    height: 85%; /* Full height minus margin */
+    margin-bottom: 5px; /* Add bottom margin */
+}
+
+.chat-header {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: black;
+}
+
+.chat-box {
+    flex-grow: 1;
+    background-color: #3c3c6c;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 2%;
+    overflow-y: auto;
+    color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+
+.user-message {
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0;
+    margin: 0;
+    border-radius: 10px;
+}
+
+.bot-message {
+    text-align: left;
+    display: flex;
+    justify-content: flex-start;
+    padding: 5px 0;
+    background-color: #ffc04330;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.bot-text {
+    
+    color: black;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+
+.chat-input {
+    display: flex;
+    align-items: center;
+    margin-top: auto;
+    margin-bottom: 5%;
+}
+
+.input-field {
+    flex-grow: 1;
+    padding: 10px;
+    border: none;
+    outline: none;
+    background-color: #fff;
+    color: #000;
+    font-size: 16px;
+    border-radius: 5px 0 0 5px;
+}
+
+.send-button {
+    background-color: white;
+    color: black !important;
+    padding: 10px;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.send-button:hover {
+    color: blue !important;
+}
+
+/* Database Section Styling */
+.table-section {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    background-color: #f7d59a;
+}
+
+.table-header {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: black;
+}
+
+.table-container {
+    background-color: #f7d59a;
+    border-radius: 10px;
+    overflow-y: auto;
+    max-height: 80%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    padding: 10px;
+    text-align: left;
+    font-size: 20px !important;
+}
+
+table th {
+    background-color: #333;
+    color: #fff !important;
+    font-weight: bold;
+    position: sticky;
+    top: 0;
+}
+
+table td {
+    background-color: #fff;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #555;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #777;
+}
